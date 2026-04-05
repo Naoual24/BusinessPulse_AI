@@ -1,0 +1,7 @@
+﻿src/app/page.tsx(4,72): error TS2440: Import declaration conflicts with local declaration of 'Home'.
+src/app/page.tsx(23,31): error TS2322: Type '{ size: number; }' is not assignable to type 'IntrinsicAttributes'.
+  Property 'size' does not exist on type 'IntrinsicAttributes'.
+src/components/AnalyticsView.tsx(205,178): error TS7006: Parameter 'v' implicitly has an 'any' type.
+src/components/AnalyticsView.tsx(231,174): error TS7006: Parameter 'v' implicitly has an 'any' type.
+src/components/AnalyticsView.tsx(255,174): error TS7006: Parameter 'v' implicitly has an 'any' type.
+src/components/AnalyticsView.tsx(308,174): error TS7006: Parameter 'v' implicitly has an 'any' type.

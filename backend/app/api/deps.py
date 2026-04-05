@@ -22,7 +22,14 @@ def get_current_user(db: Session = Depends(database.get_db), token: str = Depend
     except JWTError:
         raise credentials_exception
     
-    user = db.query(models.User).filter(models.User.email == email).first()
-    if user is None:
-        raise credentials_exception
-    return user
+    try:
+        user = db.query(models.User).filter(models.User.email == email).first()
+        if user is None:
+            raise credentials_exception
+        return user
+    except Exception as e:
+        # Handle database locks or other issues gracefully
+        raise HTTPException(
+            status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
+            detail="Database error during authentication"
+        )

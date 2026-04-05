@@ -11,3 +11,8 @@ openpyxl
 pydantic-settings
 python-dotenv
 email-validator
+google-generativeai
+openai>=1.13.3
+Pillow
+mlxtend
+networkx

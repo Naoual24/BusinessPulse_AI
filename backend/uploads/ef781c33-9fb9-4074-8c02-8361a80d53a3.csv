@@ -1,0 +1,15 @@
+date,product_name,qty_sold,unit_price,unit_cost
+2024-01-01,Product A,10,150,50
+2024-01-02,Product B,5,80,30
+2024-01-05,Product A,12,150,50
+2024-01-10,Product C,20,40,15
+2024-01-15,Product B,8,80,30
+2024-01-20,Product A,15,150,50
+2024-01-25,Product C,25,40,15
+2024-02-01,Product B,10,80,30
+2024-02-05,Product A,18,150,50
+2024-02-10,Product D,5,300,120
+2024-02-15,Product C,30,40,15
+2024-02-20,Product B,12,80,30
+2024-02-25,Product A,20,150,50
+2024-02-28,Product D,7,300,120

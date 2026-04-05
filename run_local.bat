@@ -16,7 +16,7 @@ pip install -r requirements.txt
 
 :: Start Backend in a new window
 echo [INFO] Starting Backend Server...
-start "BusinessPulse Backend" cmd /k "call venv\Scripts\activate && python -m uvicorn app.main:app --reload --port 8000 --host 127.0.0.1"
+start "BusinessPulse Backend" cmd /k "set PYTHONIOENCODING=utf-8 && call venv\Scripts\activate && python -m uvicorn app.main:app --reload --port 8000 --host 127.0.0.1"
 
 :: Frontend Setup
 cd ..
